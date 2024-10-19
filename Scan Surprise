@@ -1,0 +1,3 @@
+A linux tool which is called "Zbar" is used to scan flag.png:
+> zbarimg flag.png
+Flag is: picoCTF{p33k_@_b00_a81f0a35} 
