@@ -1,7 +1,7 @@
 Firstly run the instance with "Launc instance". After that connect to server with netcat.
 Challenge provided us source code.
 We see if we allocate "pico" to 0x63c3882552d0 address, we get the flag.
-Challenge shows us the address we can write and the adress we should allocate"pico"
+Challenge shows us the address we can write and the adress we should overflow.
 So, we will find how many characters we should write with subtracting these addresses.
 > 0x63c3882552d0-0x63c3882552b0 = 32 as decimal
 So, after writing 32 character, we write pico and get flag: aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaapico
