@@ -1,0 +1,25 @@
+At thischallenge, firstly click "Launch instance " and connect with given ssh command.
+After connecting, binary search is applied to the game.
+At every running, result becomes different.
+Mine was as below:
+
+Welcome to the Binary Search Game!
+I'm thinking of a number between 1 and 1000.
+Enter your guess: 500
+Higher! Try again.
+Enter your guess: 750
+Higher! Try again.
+Enter your guess: 875
+Lower! Try again.
+Enter your guess: 812
+Lower! Try again.
+Enter your guess: 781
+Higher! Try again.
+Enter your guess: 796
+Lower! Try again.
+Enter your guess: 788
+Congratulations! You guessed the correct number: 788
+Here's your flag: picoCTF{g00d_gu355_1597707f}
+Connection to atlas.picoctf.net closed.
+
+In each step I calculated (number1)+(number2)/2
