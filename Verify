@@ -1,0 +1,14 @@
+Firstly looking for checksum.txt:
+"467a10447deb3d4e17634cacc2a68ba6c2bb62a6637dad9145ea673bf0be5e02"
+
+Wrote command below to find matching checksum:
+> sha256sum files/* | grep "467a10447deb3d4e17634cacc2a68ba6c2bb62a6637dad9145ea673bf0be5e02" 
+
+"c6c8b911" file is matched.
+
+Running decrypt.sh script didn't work for me. I ran script content by myself.
+
+I ran command below: 
+> openssl enc -d -aes-256-cbc -pbkdf2 -iter 100000 -salt -in c6c8b911 -k picoCTF
+
+The flag is: picoCTF{trust_but_verify_c6c8b911} 
